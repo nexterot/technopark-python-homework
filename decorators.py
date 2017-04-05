@@ -4,11 +4,11 @@ import json
 # 1
 def log_duration(func):
 	def inner(*args, **kwargs):
-        start_time = time.time()
-        res = func(*args, **kwargs)
-        print("*** function '{}' ran in {} seconds ***".format(func.__name__, time.time() - start_time))
-        return res
-    return inner
+        	start_time = time.time()
+        	res = func(*args, **kwargs)
+        	print("*** function '{}' ran in {} seconds ***".format(func.__name__, time.time() - start_time))
+        	return res
+    	return inner
 
 # 2        
 def to_json(func):
